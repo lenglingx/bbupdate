@@ -1,1 +1,17 @@
-这个是README！
+bbupdate用于通过shell来控制后台业务分流
+
+该项目由dubbo-admin项目改变而来，主要是为了运维操作方便些
+
+支持在jdk6,jdk8布署。
+
+原来的操作后台业务需要到dubbo-admin的web界面上去。 为了使用配合shell来进行后台业务操作，所以特制作了这个东西。
+
+这个是项目的初始化，运行是没有任何问题
+
+该项目使用dubbo的2.5.4版本，mavne中央库不提供jar包，最新的编译好的dubbo的jar包为2.5.3，没有做测试。最好下载dubbo-2.5.4的源码自己编译一下
+
+maven 我们公司自己有单独的maven私服，用的是nexus架设。
+
+如果你的项目使用的是maven中央库的2.5.3,在这个项目中使用应该没有问题把pom.xml中的依赖修改一下。
+
+使用方式如下：java -jar bbupdate.jar provider(应用名) ipaddress(提供服务的IP) enable(开启)/disable(关闭)
