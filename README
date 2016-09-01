@@ -2,7 +2,7 @@ bbupdate用于通过shell来控制后台业务分流
 
 该项目由dubbo-admin项目改变而来，主要是为了运维操作方便些
 
-支持在jdk6,jdk8布署。
+支持在jdk6至jdk8布署。
 
 原来的操作后台业务需要到dubbo-admin的web界面上去。 为了使用配合shell来进行后台业务操作，所以特制作了这个东西。
 
